@@ -35,14 +35,16 @@
             this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
+            this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
+            this.guna2Panel_container = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button6 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button5 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2BtnPas = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2BtnRes = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2BtnDashboard = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
@@ -51,20 +53,20 @@
             // 
             this.guna2Panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.guna2Panel1.BackColor = System.Drawing.SystemColors.Info;
+            this.guna2Panel1.BackColor = System.Drawing.SystemColors.Window;
             this.guna2Panel1.Controls.Add(this.guna2Button7);
             this.guna2Panel1.Controls.Add(this.guna2Button6);
-            this.guna2Panel1.Controls.Add(this.guna2Button5);
-            this.guna2Panel1.Controls.Add(this.guna2Button4);
-            this.guna2Panel1.Controls.Add(this.guna2Button3);
+            this.guna2Panel1.Controls.Add(this.guna2BtnPas);
+            this.guna2Panel1.Controls.Add(this.guna2BtnRes);
+            this.guna2Panel1.Controls.Add(this.guna2BtnDashboard);
             this.guna2Panel1.Location = new System.Drawing.Point(0, 32);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(55, 474);
+            this.guna2Panel1.Size = new System.Drawing.Size(55, 488);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.BackColor = System.Drawing.SystemColors.Info;
+            this.guna2Panel2.BackColor = System.Drawing.SystemColors.Window;
             this.guna2Panel2.Controls.Add(this.guna2Button8);
             this.guna2Panel2.Controls.Add(this.guna2Button1);
             this.guna2Panel2.Controls.Add(this.guna2TextBox1);
@@ -121,6 +123,33 @@
             this.guna2DragControl1.TargetControl = this.guna2Panel2;
             this.guna2DragControl1.UseTransparentDrag = true;
             // 
+            // guna2Panel_container
+            // 
+            this.guna2Panel_container.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel_container.Location = new System.Drawing.Point(52, 34);
+            this.guna2Panel_container.Name = "guna2Panel_container";
+            this.guna2Panel_container.Size = new System.Drawing.Size(850, 486);
+            this.guna2Panel_container.TabIndex = 2;
+            // 
+            // guna2Button8
+            // 
+            this.guna2Button8.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button8.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2Button8.ForeColor = System.Drawing.Color.White;
+            this.guna2Button8.HoverState.BorderColor = System.Drawing.Color.Silver;
+            this.guna2Button8.Image = global::Booking_tiket.Properties.Resources.arrow_left;
+            this.guna2Button8.Location = new System.Drawing.Point(227, 0);
+            this.guna2Button8.Name = "guna2Button8";
+            this.guna2Button8.Size = new System.Drawing.Size(45, 34);
+            this.guna2Button8.TabIndex = 6;
+            // 
             // guna2Button1
             // 
             this.guna2Button1.Anchor = System.Windows.Forms.AnchorStyles.Top;
@@ -174,7 +203,7 @@
             this.guna2Button7.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button7.ForeColor = System.Drawing.Color.White;
             this.guna2Button7.Image = global::Booking_tiket.Properties.Resources.profile_user;
-            this.guna2Button7.Location = new System.Drawing.Point(0, 366);
+            this.guna2Button7.Location = new System.Drawing.Point(0, 380);
             this.guna2Button7.Name = "guna2Button7";
             this.guna2Button7.Size = new System.Drawing.Size(55, 54);
             this.guna2Button7.TabIndex = 4;
@@ -191,90 +220,78 @@
             this.guna2Button6.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2Button6.ForeColor = System.Drawing.Color.White;
             this.guna2Button6.Image = global::Booking_tiket.Properties.Resources.setting__2_;
-            this.guna2Button6.Location = new System.Drawing.Point(0, 420);
+            this.guna2Button6.Location = new System.Drawing.Point(0, 434);
             this.guna2Button6.Name = "guna2Button6";
             this.guna2Button6.Size = new System.Drawing.Size(55, 54);
             this.guna2Button6.TabIndex = 3;
             // 
-            // guna2Button5
+            // guna2BtnPas
             // 
-            this.guna2Button5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button5.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button5.ForeColor = System.Drawing.Color.White;
-            this.guna2Button5.Image = global::Booking_tiket.Properties.Resources.customers__1_;
-            this.guna2Button5.Location = new System.Drawing.Point(0, 108);
-            this.guna2Button5.Name = "guna2Button5";
-            this.guna2Button5.Size = new System.Drawing.Size(55, 54);
-            this.guna2Button5.TabIndex = 2;
+            this.guna2BtnPas.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2BtnPas.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2BtnPas.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2BtnPas.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2BtnPas.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2BtnPas.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2BtnPas.FillColor = System.Drawing.Color.Transparent;
+            this.guna2BtnPas.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2BtnPas.ForeColor = System.Drawing.Color.White;
+            this.guna2BtnPas.Image = global::Booking_tiket.Properties.Resources.customers__1_;
+            this.guna2BtnPas.Location = new System.Drawing.Point(0, 108);
+            this.guna2BtnPas.Name = "guna2BtnPas";
+            this.guna2BtnPas.Size = new System.Drawing.Size(55, 54);
+            this.guna2BtnPas.TabIndex = 2;
+            this.guna2BtnPas.Click += new System.EventHandler(this.guna2BtnPas_Click);
             // 
-            // guna2Button4
+            // guna2BtnRes
             // 
-            this.guna2Button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button4.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button4.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button4.ForeColor = System.Drawing.Color.White;
-            this.guna2Button4.Image = global::Booking_tiket.Properties.Resources.booking__1_;
-            this.guna2Button4.Location = new System.Drawing.Point(0, 54);
-            this.guna2Button4.Name = "guna2Button4";
-            this.guna2Button4.Size = new System.Drawing.Size(55, 54);
-            this.guna2Button4.TabIndex = 1;
+            this.guna2BtnRes.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2BtnRes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2BtnRes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2BtnRes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2BtnRes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2BtnRes.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2BtnRes.FillColor = System.Drawing.Color.Transparent;
+            this.guna2BtnRes.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2BtnRes.ForeColor = System.Drawing.Color.White;
+            this.guna2BtnRes.Image = global::Booking_tiket.Properties.Resources.booking__1_;
+            this.guna2BtnRes.Location = new System.Drawing.Point(0, 54);
+            this.guna2BtnRes.Name = "guna2BtnRes";
+            this.guna2BtnRes.Size = new System.Drawing.Size(55, 54);
+            this.guna2BtnRes.TabIndex = 1;
+            this.guna2BtnRes.Click += new System.EventHandler(this.guna2BtnRes_Click);
             // 
-            // guna2Button3
+            // guna2BtnDashboard
             // 
-            this.guna2Button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.guna2Button3.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Image = global::Booking_tiket.Properties.Resources.menu1;
-            this.guna2Button3.Location = new System.Drawing.Point(0, 0);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(55, 54);
-            this.guna2Button3.TabIndex = 0;
+            this.guna2BtnDashboard.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.guna2BtnDashboard.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2BtnDashboard.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2BtnDashboard.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2BtnDashboard.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2BtnDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2BtnDashboard.FillColor = System.Drawing.Color.Transparent;
+            this.guna2BtnDashboard.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2BtnDashboard.ForeColor = System.Drawing.Color.White;
+            this.guna2BtnDashboard.Image = global::Booking_tiket.Properties.Resources.menu1;
+            this.guna2BtnDashboard.Location = new System.Drawing.Point(0, 0);
+            this.guna2BtnDashboard.Name = "guna2BtnDashboard";
+            this.guna2BtnDashboard.Size = new System.Drawing.Size(55, 54);
+            this.guna2BtnDashboard.TabIndex = 0;
+            this.guna2BtnDashboard.Click += new System.EventHandler(this.guna2BtnDashboard_Click);
             // 
-            // guna2Button8
-            // 
-            this.guna2Button8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.HoverState.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button8.Image = global::Booking_tiket.Properties.Resources.arrow_left;
-            this.guna2Button8.Location = new System.Drawing.Point(227, 0);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.Size = new System.Drawing.Size(45, 34);
-            this.guna2Button8.TabIndex = 6;
-            // 
-            // Form1
+            // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.ClientSize = new System.Drawing.Size(903, 506);
+            this.ClientSize = new System.Drawing.Size(903, 520);
+            this.Controls.Add(this.guna2Panel_container);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "Home";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Home_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.ResumeLayout(false);
@@ -291,12 +308,14 @@
         private Guna.UI2.WinForms.Guna2DragControl guna2DragControl1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button5;
-        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private Guna.UI2.WinForms.Guna2Button guna2BtnDashboard;
+        private Guna.UI2.WinForms.Guna2Button guna2BtnPas;
+        private Guna.UI2.WinForms.Guna2Button guna2BtnRes;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
         private Guna.UI2.WinForms.Guna2Button guna2Button8;
+        private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel_container;
     }
 }
 

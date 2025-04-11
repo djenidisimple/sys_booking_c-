@@ -8,3 +8,9 @@ C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tik
 C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.exe
 C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.pdb
 C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.Home.resources
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.Passagers.resources
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.Dashboard.resources
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\bin\Debug\Guna.Charts.WinForms.dll
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.Reserved.resources
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.ResPlace.resources
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.ResTrain.resources
