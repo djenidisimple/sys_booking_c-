@@ -1,0 +1,10 @@
+c:\users\djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\bin\Debug\Booking_tiket.exe.config
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\bin\Debug\Booking_tiket.exe
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\bin\Debug\Booking_tiket.pdb
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\bin\Debug\Guna.UI2.dll
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.csprojResolveAssemblyReference.cache
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.Properties.Resources.resources
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.csproj.GenerateResource.Cache
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.exe
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.pdb
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.Home.resources
