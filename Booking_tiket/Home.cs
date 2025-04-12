@@ -64,13 +64,25 @@ namespace Booking_tiket
             }
             else if (_storeData == "ResPlace") 
             {
-                container(new ResPlace());
+                ResPlace rsP = new ResPlace();
+                container(rsP);
+                rsP.DataSent += GetContentEvent;
+            } else if (_storeData == "ResPassa")
+            {
+                container(new ResPassa());
             }
         }
 
         private void guna2BtnBack_Click(object sender, EventArgs e)
         {
-            if (Pagination.get_page.Count == 2)
+            if (Pagination.get_page.Count == 3) 
+            {
+                Pagination.get_page.Remove("ResPassa");
+                ResPlace rsP = new ResPlace();
+                container(rsP);
+                rsP.DataSent += GetContentEvent;
+            } 
+            else if (Pagination.get_page.Count == 2)
             {
                 Pagination.get_page.Remove("ResPlace");
                 ResTrain rsT = new ResTrain();

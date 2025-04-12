@@ -14,3 +14,6 @@ C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tik
 C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.Reserved.resources
 C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.ResPlace.resources
 C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.ResTrain.resources
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.RegisterTrain.resources
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.RegisterTrajet.resources
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.ResPassa.resources
