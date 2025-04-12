@@ -33,7 +33,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2BtnRes = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.label3 = new System.Windows.Forms.Label();
@@ -46,6 +46,8 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2Panel2.BorderRadius = 12;
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel2.Controls.Add(this.guna2CircleProgressBar1);
@@ -54,7 +56,7 @@
             this.guna2Panel2.Controls.Add(this.guna2PictureBox2);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel2.Controls.Add(this.label1);
-            this.guna2Panel2.Controls.Add(this.guna2Button3);
+            this.guna2Panel2.Controls.Add(this.guna2BtnRes);
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.guna2Panel2.Location = new System.Drawing.Point(39, 86);
             this.guna2Panel2.Name = "guna2Panel2";
@@ -111,22 +113,24 @@
             this.guna2PictureBox1.TabIndex = 3;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2Button3
+            // guna2BtnRes
             // 
-            this.guna2Button3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button3.BorderRadius = 18;
-            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button3.ForeColor = System.Drawing.Color.White;
-            this.guna2Button3.Image = global::Booking_tiket.Properties.Resources.icons8_color_palette_100;
-            this.guna2Button3.Location = new System.Drawing.Point(612, 113);
-            this.guna2Button3.Name = "guna2Button3";
-            this.guna2Button3.Size = new System.Drawing.Size(123, 41);
-            this.guna2Button3.TabIndex = 1;
-            this.guna2Button3.Text = "Reserver";
+            this.guna2BtnRes.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2BtnRes.BackColor = System.Drawing.Color.Transparent;
+            this.guna2BtnRes.BorderRadius = 18;
+            this.guna2BtnRes.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2BtnRes.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2BtnRes.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2BtnRes.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2BtnRes.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2BtnRes.ForeColor = System.Drawing.Color.White;
+            this.guna2BtnRes.Image = global::Booking_tiket.Properties.Resources.icons8_color_palette_100;
+            this.guna2BtnRes.Location = new System.Drawing.Point(612, 113);
+            this.guna2BtnRes.Name = "guna2BtnRes";
+            this.guna2BtnRes.Size = new System.Drawing.Size(123, 41);
+            this.guna2BtnRes.TabIndex = 1;
+            this.guna2BtnRes.Text = "Reserver";
+            this.guna2BtnRes.Click += new System.EventHandler(this.guna2BtnRes_Click);
             // 
             // guna2HtmlLabel1
             // 
@@ -141,6 +145,7 @@
             // 
             // guna2CircleProgressBar1
             // 
+            this.guna2CircleProgressBar1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2CircleProgressBar1.Animated = true;
             this.guna2CircleProgressBar1.AutoScroll = true;
             this.guna2CircleProgressBar1.BackColor = System.Drawing.Color.Transparent;
@@ -170,6 +175,7 @@
             // 
             // guna2HtmlLabel2
             // 
+            this.guna2HtmlLabel2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.25F);
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.White;
@@ -201,7 +207,7 @@
         #endregion
 
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
-        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button guna2BtnRes;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private System.Windows.Forms.Label label2;

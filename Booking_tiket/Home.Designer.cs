@@ -37,7 +37,7 @@
             this.guna2DragControl1 = new Guna.UI2.WinForms.Guna2DragControl(this.components);
             this.guna2ShadowForm1 = new Guna.UI2.WinForms.Guna2ShadowForm(this.components);
             this.guna2Panel_container = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2Button8 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2BtnBack = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Button7 = new Guna.UI2.WinForms.Guna2Button();
@@ -67,7 +67,7 @@
             // guna2Panel2
             // 
             this.guna2Panel2.BackColor = System.Drawing.SystemColors.Window;
-            this.guna2Panel2.Controls.Add(this.guna2Button8);
+            this.guna2Panel2.Controls.Add(this.guna2BtnBack);
             this.guna2Panel2.Controls.Add(this.guna2Button1);
             this.guna2Panel2.Controls.Add(this.guna2TextBox1);
             this.guna2Panel2.Controls.Add(this.guna2ControlBox3);
@@ -133,22 +133,23 @@
             this.guna2Panel_container.Size = new System.Drawing.Size(850, 486);
             this.guna2Panel_container.TabIndex = 2;
             // 
-            // guna2Button8
+            // guna2BtnBack
             // 
-            this.guna2Button8.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button8.FillColor = System.Drawing.Color.Transparent;
-            this.guna2Button8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2Button8.ForeColor = System.Drawing.Color.White;
-            this.guna2Button8.HoverState.BorderColor = System.Drawing.Color.Silver;
-            this.guna2Button8.Image = global::Booking_tiket.Properties.Resources.arrow_left;
-            this.guna2Button8.Location = new System.Drawing.Point(227, 0);
-            this.guna2Button8.Name = "guna2Button8";
-            this.guna2Button8.Size = new System.Drawing.Size(45, 34);
-            this.guna2Button8.TabIndex = 6;
+            this.guna2BtnBack.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.guna2BtnBack.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2BtnBack.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2BtnBack.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2BtnBack.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2BtnBack.FillColor = System.Drawing.Color.Transparent;
+            this.guna2BtnBack.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2BtnBack.ForeColor = System.Drawing.Color.White;
+            this.guna2BtnBack.HoverState.BorderColor = System.Drawing.Color.Silver;
+            this.guna2BtnBack.Image = global::Booking_tiket.Properties.Resources.arrow_left;
+            this.guna2BtnBack.Location = new System.Drawing.Point(227, 0);
+            this.guna2BtnBack.Name = "guna2BtnBack";
+            this.guna2BtnBack.Size = new System.Drawing.Size(45, 34);
+            this.guna2BtnBack.TabIndex = 6;
+            this.guna2BtnBack.Click += new System.EventHandler(this.guna2BtnBack_Click);
             // 
             // guna2Button1
             // 
@@ -313,7 +314,7 @@
         private Guna.UI2.WinForms.Guna2Button guna2BtnRes;
         private Guna.UI2.WinForms.Guna2Button guna2Button6;
         private Guna.UI2.WinForms.Guna2Button guna2Button7;
-        private Guna.UI2.WinForms.Guna2Button guna2Button8;
+        private Guna.UI2.WinForms.Guna2Button guna2BtnBack;
         private Guna.UI2.WinForms.Guna2ShadowForm guna2ShadowForm1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel_container;
     }

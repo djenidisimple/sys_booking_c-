@@ -59,6 +59,7 @@
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="method\Event.cs" />
     <Compile Include="Home.cs">
       <SubType>Form</SubType>
     </Compile>

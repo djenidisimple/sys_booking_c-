@@ -13,6 +13,7 @@ namespace Booking_tiket
 {
     public partial class Reserved : Form
     {
+        public event EventHandler<DataEventArgs> DataSent;
         public Reserved()
         {
             InitializeComponent();
@@ -20,7 +21,11 @@ namespace Booking_tiket
 
         private void guna2Btn_voir_Click(object sender, EventArgs e)
         {
-            Pagination.get_page = "ResTrain";
+            if (DataSent != null) 
+            {
+                Pagination.get_page.Add("ResTrain");    
+                DataSent(this, new DataEventArgs("ResTrain"));
+            }
         }
     }
 }
