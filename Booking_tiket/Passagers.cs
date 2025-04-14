@@ -15,6 +15,22 @@ namespace Booking_tiket
         public Passagers()
         {
             InitializeComponent();
+            loadDataGridView(guna2DataGridView);
+        }
+        private void loadDataGridView(DataGridView data)
+        {
+            data.AutoGenerateColumns = true;
+            data.ReadOnly = true;
+            ControlerClient client = new ControlerClient();
+            client.conn.open();
+            data.DataSource = client.GetData();
+            data.AllowUserToResizeRows = false;
+            data.AllowUserToAddRows = false;
+            data.Refresh();
+            client.conn.close();
+            client.conn.open();
+            nbPass.Text = "" + client.GetNumberPassager();
+            client.conn.close();
         }
     }
 }

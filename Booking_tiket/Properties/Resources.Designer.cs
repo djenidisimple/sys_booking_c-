@@ -413,6 +413,16 @@ namespace Booking_tiket.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap plus__1_ {
+            get {
+                object obj = ResourceManager.GetObject("plus (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap profile_user {
             get {
                 object obj = ResourceManager.GetObject("profile-user", resourceCulture);
@@ -456,6 +466,16 @@ namespace Booking_tiket.Properties {
         internal static System.Drawing.Bitmap sieges_de_train__1_ {
             get {
                 object obj = ResourceManager.GetObject("sieges-de-train (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap telephoner {
+            get {
+                object obj = ResourceManager.GetObject("telephoner", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

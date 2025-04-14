@@ -31,30 +31,29 @@
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.title = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnValider = new Guna.UI2.WinForms.Guna2Button();
+            this.capacity = new Guna.UI2.WinForms.Guna2TextBox();
+            this.nameTrain = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel2
             // 
-            this.guna2Panel2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.guna2Panel2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.guna2Panel2.BorderRadius = 8;
             this.guna2Panel2.BorderThickness = 8;
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
             this.guna2Panel2.Controls.Add(this.guna2PictureBox1);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel1);
-            this.guna2Panel2.Controls.Add(this.guna2Button1);
-            this.guna2Panel2.Controls.Add(this.guna2TextBox2);
-            this.guna2Panel2.Controls.Add(this.guna2TextBox1);
+            this.guna2Panel2.Controls.Add(this.title);
+            this.guna2Panel2.Controls.Add(this.btnValider);
+            this.guna2Panel2.Controls.Add(this.capacity);
+            this.guna2Panel2.Controls.Add(this.nameTrain);
             this.guna2Panel2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(8)))), ((int)(((byte)(103)))), ((int)(((byte)(136)))));
-            this.guna2Panel2.Location = new System.Drawing.Point(233, 12);
+            this.guna2Panel2.Location = new System.Drawing.Point(233, 11);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(379, 462);
             this.guna2Panel2.TabIndex = 6;
@@ -81,37 +80,6 @@
             this.guna2HtmlLabel2.TabIndex = 10;
             this.guna2HtmlLabel2.Text = "Nom";
             // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(111, 36);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(153, 31);
-            this.guna2HtmlLabel1.TabIndex = 8;
-            this.guna2HtmlLabel1.Text = "Ajout de Train";
-            // 
-            // guna2Button1
-            // 
-            this.guna2Button1.Animated = true;
-            this.guna2Button1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
-            this.guna2Button1.BorderRadius = 5;
-            this.guna2Button1.BorderThickness = 1;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.SeaShell;
-            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button1.Location = new System.Drawing.Point(92, 384);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(189, 39);
-            this.guna2Button1.TabIndex = 7;
-            this.guna2Button1.Text = "Enregistrer";
-            // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -125,55 +93,91 @@
             this.guna2PictureBox1.TabIndex = 9;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // guna2TextBox2
+            // title
             // 
-            this.guna2TextBox2.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2TextBox2.Animated = true;
-            this.guna2TextBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox2.BorderRadius = 12;
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.IconLeft = global::Booking_tiket.Properties.Resources.siege;
-            this.guna2TextBox2.Location = new System.Drawing.Point(34, 276);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.guna2TextBox2.PlaceholderText = "Entrer la capacité du Train...";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.Size = new System.Drawing.Size(304, 37);
-            this.guna2TextBox2.TabIndex = 5;
+            this.title.BackColor = System.Drawing.Color.Transparent;
+            this.title.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F);
+            this.title.ForeColor = System.Drawing.Color.Transparent;
+            this.title.Location = new System.Drawing.Point(111, 36);
+            this.title.Name = "title";
+            this.title.Size = new System.Drawing.Size(153, 31);
+            this.title.TabIndex = 8;
+            this.title.Text = "Ajout de Train";
             // 
-            // guna2TextBox1
+            // btnValider
             // 
-            this.guna2TextBox1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.guna2TextBox1.Animated = true;
-            this.guna2TextBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2TextBox1.BorderRadius = 12;
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.IconLeft = global::Booking_tiket.Properties.Resources.train_front__1_;
-            this.guna2TextBox1.Location = new System.Drawing.Point(35, 168);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.DimGray;
-            this.guna2TextBox1.PlaceholderText = "Entrer le nom du train...";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(304, 37);
-            this.guna2TextBox1.TabIndex = 4;
+            this.btnValider.Animated = true;
+            this.btnValider.BackColor = System.Drawing.Color.Transparent;
+            this.btnValider.BorderColor = System.Drawing.Color.Transparent;
+            this.btnValider.BorderRadius = 5;
+            this.btnValider.BorderThickness = 1;
+            this.btnValider.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnValider.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnValider.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnValider.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnValider.FillColor = System.Drawing.Color.SeaShell;
+            this.btnValider.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.btnValider.ForeColor = System.Drawing.Color.Black;
+            this.btnValider.Location = new System.Drawing.Point(92, 384);
+            this.btnValider.Name = "btnValider";
+            this.btnValider.Size = new System.Drawing.Size(189, 39);
+            this.btnValider.TabIndex = 7;
+            this.btnValider.Text = "Enregistrer";
+            this.btnValider.Click += new System.EventHandler(this.btnValider_Click);
+            // 
+            // capacity
+            // 
+            this.capacity.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.capacity.Animated = true;
+            this.capacity.BackColor = System.Drawing.Color.Transparent;
+            this.capacity.BorderRadius = 12;
+            this.capacity.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.capacity.DefaultText = "";
+            this.capacity.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.capacity.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.capacity.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.capacity.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.capacity.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.capacity.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.capacity.ForeColor = System.Drawing.Color.Black;
+            this.capacity.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.capacity.IconLeft = global::Booking_tiket.Properties.Resources.siege;
+            this.capacity.Location = new System.Drawing.Point(34, 276);
+            this.capacity.Name = "capacity";
+            this.capacity.PasswordChar = '\0';
+            this.capacity.PlaceholderForeColor = System.Drawing.Color.DimGray;
+            this.capacity.PlaceholderText = "Entrer la capacité du Train...";
+            this.capacity.SelectedText = "";
+            this.capacity.Size = new System.Drawing.Size(304, 37);
+            this.capacity.TabIndex = 5;
+            this.capacity.Leave += new System.EventHandler(this.capacity_Leave);
+            // 
+            // nameTrain
+            // 
+            this.nameTrain.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.nameTrain.Animated = true;
+            this.nameTrain.BackColor = System.Drawing.Color.Transparent;
+            this.nameTrain.BorderRadius = 12;
+            this.nameTrain.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.nameTrain.DefaultText = "";
+            this.nameTrain.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.nameTrain.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.nameTrain.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nameTrain.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.nameTrain.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nameTrain.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.nameTrain.ForeColor = System.Drawing.Color.Black;
+            this.nameTrain.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.nameTrain.IconLeft = global::Booking_tiket.Properties.Resources.train_front__1_;
+            this.nameTrain.Location = new System.Drawing.Point(35, 168);
+            this.nameTrain.Name = "nameTrain";
+            this.nameTrain.PasswordChar = '\0';
+            this.nameTrain.PlaceholderForeColor = System.Drawing.Color.DimGray;
+            this.nameTrain.PlaceholderText = "Entrer le nom du train...";
+            this.nameTrain.SelectedText = "";
+            this.nameTrain.Size = new System.Drawing.Size(304, 37);
+            this.nameTrain.TabIndex = 4;
+            this.nameTrain.Leave += new System.EventHandler(this.nameTrain_Leave);
             // 
             // RegisterTrain
             // 
@@ -197,9 +201,9 @@
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        private Guna.UI2.WinForms.Guna2HtmlLabel title;
+        private Guna.UI2.WinForms.Guna2Button btnValider;
+        private Guna.UI2.WinForms.Guna2TextBox capacity;
+        private Guna.UI2.WinForms.Guna2TextBox nameTrain;
     }
 }
