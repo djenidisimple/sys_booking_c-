@@ -23,3 +23,7 @@ C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tik
 C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\bin\Debug\zxing.xml
 C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.csprojResolveAssemblyReference.cache
 C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\obj\Debug\Booking_tiket.ViewPdf.resources
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\bin\Debug\PdfiumViewer.dll
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\bin\Debug\PdfiumViewer.xml
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\bin\Debug\de\PdfiumViewer.resources.dll
+C:\Users\Djenidi\documents\visual studio 2012\Projects\Booking_tiket\Booking_tiket\bin\Debug\nl\PdfiumViewer.resources.dll

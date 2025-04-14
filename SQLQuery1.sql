@@ -1,0 +1,1 @@
+﻿SELECT Count(PlaceID) FROM Places WHERE TrajetID = 70 AND EstDisponible = 0;

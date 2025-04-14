@@ -33,7 +33,7 @@ namespace Booking_tiket.Controler
 
                             PdfPCell cellLeft = new PdfPCell();
                             cellLeft.Border = PdfPCell.NO_BORDER;
-                            cellLeft.AddElement(new Paragraph(new Paragraph("BILLET DE TRAIN", Constant.policeTitre)));
+                            cellLeft.AddElement(new Paragraph(new Paragraph("BILLET de TRAIN", Constant.policeTitre)));
 
                             cellLeft.AddElement(new Paragraph("Départ : " + ticket[i].depart + "\nArrivée : " + ticket[i].arriver + "", Constant.policeInfos));
                             cellLeft.AddElement(new Paragraph("Date : " + ticket[i].dateDepart.ToString("dd/MM/yyyy HH:mm") + "", Constant.policeInfos));

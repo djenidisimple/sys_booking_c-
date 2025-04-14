@@ -24,7 +24,6 @@ namespace Booking_tiket
             using (var stream = new MemoryStream(pdfData))
             {
                 var pdfDocument = PdfDocument.Load(stream);
-                pdfRenderer1.Document = pdfDocument;
             }
         }
     }

@@ -160,8 +160,25 @@ namespace Booking_tiket
 
         private void btnExport_Click(object sender, EventArgs e)
         {
-            Form view = new ViewPdf();
-            view.ShowDialog();
+            if (ValuePassed.idTrajet > 0)
+            {
+                GetBook ticket = new GetBook();
+                ticket.conn.open();
+                List<Billet> b = ticket.genListBookAll(ValuePassed.idTrajet);
+                ticket.conn.close();
+                if (b.Count == 0)
+                {
+                    MessageBox.Show("Aucun billet disponible pour le moment!");
+                }
+                else
+                {
+                    ticket.getBook(b);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Il y a eu une erreur durant la création de pdf!");
+            }
         }
 
     }
